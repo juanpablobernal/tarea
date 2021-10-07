@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Actividad</title>
+</head>
+
+	<style type="text/css">
+.fondo
+{
+	position: absolute;
+	   	background: url("fondo.jpg");
+	background-size: cover;
+	width:  1366px;
+   		height: 750px;
+}
+	.nombre{
+		   	position: absolute;
+    	top: 310px;
+    	left: 160px;
+    	border: solid black 2px;
+    	width: 200px;
+    	height: 40px;
+	}
+	.DIO{
+    	position: absolute;
+   		top: 50px;
+   		left: 350px;
+   		border: solid pink 5px;
+   		width: 500px;
+   		height: 250px;
+   		background: lightpink;
+    }
+
+    .botoneninglish{
+    	position: absolute;
+    	top: 160px;
+    	left: 160px;
+    	border: solid black 2px;
+    	width: 200px;
+    	height: 40px;
+    
+    }
+    .vosquiensos{
+    	position: absolute;
+  		top: 0px;
+   		left: 600px;
+   		border: solid black 5px;
+   		width: 200px;
+   		height: 250px;
+   		font-size: 25px;
+   		background: lightcyan;
+    }
+    .decoracion 
+    {
+    	left: 100px;
+    	top: 250px;
+    	position: absolute;
+    	background: url("cosa.png");
+	background-size: cover;
+	width: 400px;
+   		height: 450px;
+    }
+
+	</style>
+	<div class="fondo">
+	<div class="DIO">
+		 	<script>
+	function calcu(){
+	h=Number(dato1.value)
+	l=Number(dato2.value);
+	p=Number(dato3.value);
+	j=Number(dato4.value);
+	resul=l*p 
+	nosequehagoconmivida= j-resul
+			eje.innerHTML="el valor total de su compra es: "+resul+"y lo que le sobra es: "+nosequehagoconmivida
+			if(nosequehagoconmivida>resul)
+			{
+eje.innerHTML="su dinero no es suficiente para comprar lo que quiere"
+			}
+			if (p>10)
+			{
+				eje.innerHTML="no tenemos esa cantidad de producto, vuelva mas tarde cuando nos llege mas producto"
+
+			}
+
+	}
+
+ 	</script>
+	<form> 
+		<center>
+		<label>TIENDA DE DOÑA JUANA 2.0, LAS JUANA QUE NUNCA.</label>
+		<br>
+		<br>
+		<br>
+		<br>
+		<input type="text" id="dato1" placeholder="Producto">
+		<input type="text" id="dato2" placeholder="Precio">
+		<input type="text" id="dato3" placeholder="Cantidad">
+		<input type="text" id="dato4" placeholder="Mi dinero">
+		
+
+		<div class="vosquiensos">
+		<center>
+		<label>Alacena</label>
+		<br>
+		<label>lechuga:  10</label>
+        <br>
+		<label>juguito:  10</label>
+		<br>
+		<label>Doritos:  10</label>
+		<br>
+		<label>lechuga:  3500</label>
+        <br>
+		<label>juguito:  2500</label>
+		<br>
+		<label>Doritos:  100</label>
+		<br>
+		</div>
+
+	</center>
+	<center><div class="botoneninglish" onclick="calcu()" id="eje">Ejecutar</div></center>	
+
+	</form>
+<center><div class="decoracion"></div></center>
+</div>
+</body>
+</html>
